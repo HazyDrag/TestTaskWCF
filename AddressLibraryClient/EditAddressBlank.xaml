@@ -1,0 +1,24 @@
+﻿<Window x:Class="AddressLibraryClient.EditAddressBlank"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AddressLibraryClient"
+        mc:Ignorable="d"
+        Title="Бланк описания адреса" Height="326.572" Width="297.507">
+    <Grid>
+        <TextBox x:Name="countryTextBox" HorizontalAlignment="Left" Height="23" Margin="74,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192"/>
+        <Label Content="Страна:" HorizontalAlignment="Left" Margin="20,24,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="regionTextBox" HorizontalAlignment="Left" Height="23" Margin="74,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192"/>
+        <Label Content="Регион:" HorizontalAlignment="Left" Margin="20,55,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="cityTextBox" HorizontalAlignment="Left" Height="23" Margin="74,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192"/>
+        <Label Content="Город:" HorizontalAlignment="Left" Margin="20,86,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="streetTextBox" HorizontalAlignment="Left" Height="23" Margin="74,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192"/>
+        <Label Content="Улица:" HorizontalAlignment="Left" Margin="20,117,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="houseTextBox" HorizontalAlignment="Left" Height="23" Margin="157,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="109"/>
+        <Label Content="Дом, корпус, квартира:" HorizontalAlignment="Left" Margin="20,148,0,0" VerticalAlignment="Top"/>
+        <Button Content="ОК" HorizontalAlignment="Left" Margin="102,227,0,0" VerticalAlignment="Top" Width="89" Height="49" Click="Button_Click"/>
+        <Button x:Name="descriptionBlankButton" Content="Показать описание адреса" HorizontalAlignment="Left" Margin="20,182,0,0" VerticalAlignment="Top" Width="246" Click="descriptionBlankButton_Click" Height="25"/>
+
+    </Grid>
+</Window>

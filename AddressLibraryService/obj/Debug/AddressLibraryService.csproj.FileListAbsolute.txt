@@ -1,0 +1,8 @@
+C:\Users\goldr\source\repos\AddressLibraryService\AddressLibraryService\obj\Debug\AddressLibraryService.csprojResolveAssemblyReference.cache
+C:\Users\goldr\source\repos\AddressLibraryService\AddressLibraryService\obj\Debug\AddressLibraryService.csproj.CoreCompileInputs.cache
+C:\Users\goldr\source\repos\AddressLibraryService\AddressLibraryService\bin\AddressLibraryService.dll.config
+C:\Users\goldr\source\repos\AddressLibraryService\AddressLibraryService\bin\AddressLibraryService.dll
+C:\Users\goldr\source\repos\AddressLibraryService\AddressLibraryService\bin\AddressLibraryService.pdb
+C:\Users\goldr\source\repos\AddressLibraryService\AddressLibraryService\obj\Debug\AddressLibraryService.dll
+C:\Users\goldr\source\repos\AddressLibraryService\AddressLibraryService\obj\Debug\AddressLibraryService.pdb
+C:\Users\goldr\source\repos\AddressLibraryService\AddressLibraryService\bin\Microsoft.IdentityModel.Extensions.dll

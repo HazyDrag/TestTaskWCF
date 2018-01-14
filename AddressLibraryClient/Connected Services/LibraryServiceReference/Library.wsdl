@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Library" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/library/Library.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost/library/Library.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost/library/Library.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/AddressLibraryService" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ILibrary_TestConnection_InputMessage">
+    <wsdl:part name="parameters" element="tns:TestConnection" />
+  </wsdl:message>
+  <wsdl:message name="ILibrary_TestConnection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TestConnectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILibrary_UserNameValidator_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserNameValidator" />
+  </wsdl:message>
+  <wsdl:message name="ILibrary_UserNameValidator_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserNameValidatorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILibrary_ReadAllLibrary_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReadAllLibrary" />
+  </wsdl:message>
+  <wsdl:message name="ILibrary_ReadAllLibrary_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReadAllLibraryResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILibrary_EditAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditAddress" />
+  </wsdl:message>
+  <wsdl:message name="ILibrary_EditAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILibrary_ReadDescription_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReadDescription" />
+  </wsdl:message>
+  <wsdl:message name="ILibrary_ReadDescription_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReadDescriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILibrary_EditDescription_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditDescription" />
+  </wsdl:message>
+  <wsdl:message name="ILibrary_EditDescription_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditDescriptionResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ILibrary">
+    <wsdl:operation name="TestConnection">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILibrary/TestConnection" message="tns:ILibrary_TestConnection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILibrary/TestConnectionResponse" message="tns:ILibrary_TestConnection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UserNameValidator">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILibrary/UserNameValidator" message="tns:ILibrary_UserNameValidator_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILibrary/UserNameValidatorResponse" message="tns:ILibrary_UserNameValidator_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllLibrary">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILibrary/ReadAllLibrary" message="tns:ILibrary_ReadAllLibrary_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILibrary/ReadAllLibraryResponse" message="tns:ILibrary_ReadAllLibrary_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILibrary/EditAddress" message="tns:ILibrary_EditAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILibrary/EditAddressResponse" message="tns:ILibrary_EditAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadDescription">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILibrary/ReadDescription" message="tns:ILibrary_ReadDescription_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILibrary/ReadDescriptionResponse" message="tns:ILibrary_ReadDescription_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditDescription">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILibrary/EditDescription" message="tns:ILibrary_EditDescription_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILibrary/EditDescriptionResponse" message="tns:ILibrary_EditDescription_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ILibrary" type="tns:ILibrary">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TestConnection">
+      <soap:operation soapAction="http://tempuri.org/ILibrary/TestConnection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UserNameValidator">
+      <soap:operation soapAction="http://tempuri.org/ILibrary/UserNameValidator" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadAllLibrary">
+      <soap:operation soapAction="http://tempuri.org/ILibrary/ReadAllLibrary" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditAddress">
+      <soap:operation soapAction="http://tempuri.org/ILibrary/EditAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReadDescription">
+      <soap:operation soapAction="http://tempuri.org/ILibrary/ReadDescription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditDescription">
+      <soap:operation soapAction="http://tempuri.org/ILibrary/EditDescription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Library">
+    <wsdl:port name="BasicHttpBinding_ILibrary" binding="tns:BasicHttpBinding_ILibrary">
+      <soap:address location="http://localhost/library/Library.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
