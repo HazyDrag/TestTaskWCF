@@ -1,0 +1,8 @@
+C:\Users\goldr\source\repos\TestTaskWCF\AddressLibraryService\bin\AddressLibraryService.dll.config
+C:\Users\goldr\source\repos\TestTaskWCF\AddressLibraryService\bin\AddressLibraryService.dll
+C:\Users\goldr\source\repos\TestTaskWCF\AddressLibraryService\bin\AddressLibraryService.pdb
+C:\Users\goldr\source\repos\TestTaskWCF\AddressLibraryService\bin\Microsoft.IdentityModel.Extensions.dll
+C:\Users\goldr\source\repos\TestTaskWCF\AddressLibraryService\obj\Release\AddressLibraryService.csprojResolveAssemblyReference.cache
+C:\Users\goldr\source\repos\TestTaskWCF\AddressLibraryService\obj\Release\AddressLibraryService.csproj.CoreCompileInputs.cache
+C:\Users\goldr\source\repos\TestTaskWCF\AddressLibraryService\obj\Release\AddressLibraryService.dll
+C:\Users\goldr\source\repos\TestTaskWCF\AddressLibraryService\obj\Release\AddressLibraryService.pdb

@@ -13,6 +13,7 @@
         <TextBox x:Name="loginBox" HorizontalAlignment="Left" Height="23" Margin="196,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" TabIndex="1" Text="admin"/>
         <Label x:Name="labelLogin" Content="Логин:" HorizontalAlignment="Left" Margin="238,55,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.499,0.485"/>
         <Label x:Name="labelPassword" Content="Пароль" HorizontalAlignment="Left" Margin="238,109,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.499,0.485"/>
+        <Label x:Name="helpLabel" Content="Логин/пароль" HorizontalAlignment="Left" Margin="38,37,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
